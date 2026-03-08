@@ -1,6 +1,6 @@
 ## Overview
-Typically, the age of abalone is determined by counting the number of rings on its shell which is a tedious task in marine biology. Age is calculated using the following formula,
- Age = Rings + 1.5.
+Typically, the age of abalone is determined by counting the number of rings on its shell which is a tedious task in marine biology. Age is calculated using the following formula,\
+ Age = Rings + 1.5.\
 The aim of this project is to create a machine learning pipeline to predict the age of an abalone based on its physical measurements.  The Abalone dataset was obtained from the UCI Machine Learning Repository. Finally, the various models will be compared to identify which one performs the best. 
 
 ## Problem Statement
@@ -12,35 +12,25 @@ How do different machine learning models compare in predictive performance?
 
 ## Technologies Used
 Python ecosystem tools used in this project:
-Python
-pandas
-NumPy
-scikit-learn
-Matplotlib
-Seaborn
-SHAP
+Python,
+pandas,
+NumPy,
+scikit-learn,
+Matplotlib,
+Seaborn,
+SHAP.
 
 ## Outline of the Code
-1.Overview of the Dataset
-Identifying missing values
-Feature Engineering
-Calculation of Age
-One-Hot Encoding
-Scatterplots and Heatmaps
-2.Pre-processing
-3.Models with SHAP and Scatterplots
-Linear Regression
-Ridge Regression
-Random Forest Regressor
-Gradient Boosting Regressor
+1.Overview of the Dataset: Identifying missing values, Feature Engineering, Calculation of Age, One-Hot Encoding, Scatterplots and Heatmaps\
+2.Pre-processing\
+3.Models with SHAP and Scatterplots: Linear Regression, Ridge Regression, Random Forest Regressor, Gradient Boosting Regressor\
 4.Evaluation
 
 ## Dataset Description
 The dataset contains measurements for thousands of abalones collected for biological research.
 Source: UCI Abalone Dataset
-Target Variable
-Age - Calculated as Rings + 1.5
-Features
+Target Variable: Age - Calculated as Rings + 1.5
+Features\
 Physical measurements:
 Length
 Diameter
@@ -48,7 +38,7 @@ Height
 Whole_weight
 Shucked_weight
 Viscera_weight
-Shell_weight
+Shell_weight\
 Categorical variable:
 Sex
 M = Male
@@ -71,14 +61,14 @@ Examining correlations between physical measurements and age
 Identifying potential outliers
 Visualization tools used:
 Matplotlib
-Seaborn
+Seaborn\
 Initial analysis suggested that weight-related features were strongly associated with abalone age.
 
 ## Feature Preprocessing
 Data preprocessing was implemented using a machine learning pipeline.
-Key preprocessing steps:
+Key preprocessing steps:\
 Categorical Encoding- The Sex variable was encoded using:
-OneHotEncoder
+OneHotEncoder\
 Feature Scaling - For linear models, numerical features were scaled using:
 StandardScaler
 
@@ -133,7 +123,7 @@ Ensemble methods outperformed linear regression models.
 More errors were produced at higher ages.
 Gradient Boosting provided the best overall predictive performance.
 Sex had minimal impact compared to physical measurements.
-These findings align with biological expectations that abalone grow heavier as they age.
+These findings align with biological expectations that abalone grow heavier as they age.\
 Potential improvements to this project include:
 Hyperparameter tuning for ensemble models
 Cross-validation for more robust evaluation
